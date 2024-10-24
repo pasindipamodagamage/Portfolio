@@ -4,6 +4,154 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasindi Pamoda</title>
+
+    <!-- browser icon  -->
+    <link rel="icon" href="/assets/icons/my-icon-black-background.jpeg" />
+
+    <!-- link stylesheets -->
+    <link rel="stylesheet" href="/css/indes.css" />
+
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Handlee&family=Mate+SC&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <!-- header  -->
+    <section id="header">
+      <div class="container">
+        <header>
+          <nav>
+            <img
+              src="/assets/icons/my-icon-black-background-remove.png"
+              class="logo"
+            />
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Servicers</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+        <div class="header-text">
+          <p id="paragraph-1">Full Stack Developer |</p>
+          <h1>Hi, I am <span>Pasindi</span> Pamoda <br />From Sri Lanka</h1>
+          <p id="paragraph-2">I make the complex simple.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="/assets/images/about-photo.jpeg"
+              alt="Professional-photo"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 id="sub-title">About Me</h1>
+            <p id="description">
+              I am Nagoda Gamage Pasindi Pamoda, a 22 year old undergraduate
+              software engineering student who enjoys programming and exploring
+              new technologies. I love solving real world problems through
+              creative technical solutions, always with curiosity and drive.
+              Collaboration and communication are my strengths, and I enjoy
+              making an impact in the tech world by bringing fresh ideas to
+              life.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-content active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX </span><br />Designing Web/App Interfaces</li>
+                <li>
+                  <span>Web Development </span>
+                  <br />Simple Web Sites/Web Applications
+                </li>
+                <li>
+                  <span>Software Development</span><br />Building Stand Alone
+                  Applications >
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="experience">
+              <ul>
+                <li>
+                  <span>Innovesta'24 Software Solution </span><br />Team
+                  Organizer and <br />Project Presenter at Enigma
+                </li>
+                <li>
+                  <span> 2024</span>
+                  <br />Worked Cafe Management System <br />At BUDDIS' CAFE
+                </li>
+                <li>
+                  <span>Current</span><br />Work at Gourment Guidebook,<br />
+                  Hotel De Crillon Web Sites
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="education">
+              <ul>
+                <li>
+                  <span>2018 </span>
+                  <br />the General Certificate of <br />Education (G.C.E.)
+                  Ordinary Level (O/L) Examination
+                </li>
+                <li>
+                  <span>2021 </span><br />the General Certificate of
+                  <br />Education (G.C.E.) Advance Level (A/L) Examination
+                </li>
+                <li>
+                  <span>2023 - Current</span><br />Graduate Diploma in Software
+                  Engineering at IJSE
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- getting an error form there  -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add;
+      }
+    </script>
+  </body>
 </html>
