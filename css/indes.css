@@ -232,7 +232,7 @@ nav ul li a:hover:after {
 }
 
 /* --------work------- */
-#portfolio {
+#my-work {
   padding: 50px 0;
 }
 
@@ -316,4 +316,15 @@ nav ul li a:hover:after {
 
 .btn:hover {
   background: #6fffe9;
+}
+
+/* --------contact------- */
+
+/*-------------- footer ------------*/
+footer {
+  background: #262626;
+  color: wheat;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1.2rem;
 }
