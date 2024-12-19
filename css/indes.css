@@ -412,10 +412,6 @@ form textarea {
   transition: background 0.3s, color 0.3s;
 }
 
-/* .header-text {
-  text-align: center;
-} */
-
 .header-text h1 {
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
